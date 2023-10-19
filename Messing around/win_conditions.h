@@ -1,5 +1,5 @@
-#ifndef win_conditions.h
-#define win_conditions.h
+#ifndef WIN_CONDITIONS_H
+#define WIN_CONDITIONS_H
 
 #include <string>
 
