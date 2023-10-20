@@ -1,9 +1,9 @@
 
-output: Messing around.o win_conditions.output
-	clang++ Messing around.o message.o -o
+output: rockPaperScissors.o win_conditions.o
+	clang++ rockPaperScissors.o win_conditions.o -o output
 
-Messing around.cpp: Messing around.cpp
-	clang++ -c main.cpp
+Messing around.cpp: rockPaperScissors.cpp
+	clang++ -c rockPaperScissors.cpp
 
 win_conditions.cpp: win_conditions.cpp win_conditions.h
 	clang++ -c win_conditions.cpp

@@ -12,8 +12,8 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 	
-	if ((arguments.at(1) != "r" || arguments.at(1) != "p" || arguments.at(1) != "s")
-		&& (arguments.at(2) != "r" || arguments.at(2) != "p" || arguments.at(2) != "s")) {
+	if (!(arguments.at(1) == "r" || arguments.at(1) == "p" || arguments.at(1) == "s")
+		|| !(arguments.at(2) == "r" || arguments.at(2) == "p" || arguments.at(2) == "s")) {
 		std::cout << "error: must enter r, p, or s for both players\n";
 	}
 
@@ -23,14 +23,10 @@ int main(int argc, char* argv[]) {
 	if (Player1Wins(player1, player2)) {
 		std::cout << "Player 1 wins\n";
 		return 0;
-	}
-
-	if (Player2Wins(player1, player2)) {
+	}else if (Player2Wins(player1, player2)) {
 		std::cout << "Player 2 wins\n";
 		return 0;
-	}
-
-	if (Tie(player1, player2)) {
+	}else if (Tie(player1, player2)) {
 		std::cout << "Tie\n";
 		return 0;
 	}
