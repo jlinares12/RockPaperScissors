@@ -1,5 +1,5 @@
 
-output: rockPaperScissors.o win_conditions.o
+play: rockPaperScissors.o win_conditions.o
 	clang++ rockPaperScissors.o win_conditions.o -o output
 
 Messing around.cpp: rockPaperScissors.cpp
