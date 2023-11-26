@@ -8,5 +8,6 @@ Messing around.cpp: rockPaperScissors.cpp
 win_conditions.cpp: win_conditions.cpp win_conditions.h
 	clang++ -c win_conditions.cpp
 
-clean:
+spotless:
+	rm *.o
 	rm *.o play
